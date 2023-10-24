@@ -9,4 +9,9 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('octo')
+  getOcto() {
+    return this.appService.OctoService();
+  }
 }
