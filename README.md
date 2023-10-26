@@ -7,7 +7,7 @@
 This is the API of Git visualizer wihch in its first version provide the commits history of this project. 
 
 ## Description
-This REST API develped in [Nest.js](https://github.com/nestjs/nest). The main purpose of this API is to connect with GitHub API in order to serve resources and information about projects and repositories.
+This is a REST API developed in [Nest.js](https://github.com/nestjs/nest). The main purpose of this API is to connect with GitHub API in order to serve resources and information about projects and repositories.
 
 ## API urls
 (local): http://localhost:3001/api/ <br />
