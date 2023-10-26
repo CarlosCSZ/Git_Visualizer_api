@@ -3,6 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { environments } from './configurations/environments';
+import { CommitsModule } from './commits/commits.module';
 
 import config from './configurations/config';
 
@@ -13,6 +14,7 @@ import config from './configurations/config';
       isGlobal: true,
       load: [config],
     }),
+    CommitsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
