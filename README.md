@@ -13,6 +13,17 @@ This is a REST API developed in [Nest.js](https://github.com/nestjs/nest). The m
 (local): http://localhost:3001/api/ <br />
 (production): ... <br />
 
+## 📒Dependencies
+*Node.js* version 18 or above
+
+   Download and install node.js in your computer using the following page [Node official page](https://nodejs.org/en).
+
+*Nest.js* version 10 or above
+
+   Install Nest CLI. Use this provided documentation [page](https://docs.nestjs.com/).
+   ```
+   npm i -g @nestjs/cli
+   ```
 
 ## 📝Running the app
 
@@ -26,7 +37,7 @@ This is a REST API developed in [Nest.js](https://github.com/nestjs/nest). The m
    -Create and add ssh key in your computer.<br />
    -Attach your public ssh key into your GitHub account and write the following command.<br />
    ```
-   git clone git@github.com:CarlosCSZ/Git_Visualizer_ui.git
+   git clone git@github.com:CarlosCSZ/Git_Visualizer_api.git
    ```
 
 <br />***2. Install dependencies***<br />
