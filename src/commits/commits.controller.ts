@@ -5,14 +5,18 @@ import {
   NotFoundException,
   ServiceUnavailableException,
 } from '@nestjs/common';
+import { ApiOperation, ApiTags } from '@nestjs/swagger';
+
 import { CommitsService } from './commits.service';
 import { RepoDTO } from './dto/commits.dto';
 import { CommitDetails } from './models/commitDetails.model';
 
 @Controller('api/commits')
+@ApiTags('Commits')
 export class CommitsController {
   constructor(private readonly commitsService: CommitsService) {}
 
+  @ApiOperation({ summary: 'Returns all commits from a given repo' })
   @Post()
   getOcto(@Body() body: RepoDTO): Promise<CommitDetails[]> {
     try {
