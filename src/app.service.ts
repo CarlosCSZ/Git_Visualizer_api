@@ -7,6 +7,6 @@ export class AppService {
   constructor() {}
 
   getHello(): string {
-    return '<h4>GH-GRAPH-API IS UP AND RUNNING.</h4>';
+    return '<h4 style="text-align: center">GH-GRAPH-API IS UP AND RUNNING.</h4>';
   }
 }

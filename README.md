@@ -1,49 +1,80 @@
+  <h1 align="center">GIT VISUALIZER</h1>
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <img src="git.png" width="200" alt="Git Visualizer Logo Logo" />
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+# Git Visualizer API 1.0
+This is the API of Git visualizer wihch in its first version provide the commits history of this project. 
 
 ## Description
+This REST API develped in [Nest.js](https://github.com/nestjs/nest). The main purpose of this API is to connect with GitHub API in order to serve resources and information about projects and repositories.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## API urls
+(local): http://localhost:3001/api/ <br />
+(production): ... <br />
 
-## Installation
 
-```bash
-$ pnpm install
-```
+## 📝Running the app
 
-## Running the app
+***1. Clone the repository***
 
-```bash
-# development
-$ pnpm run start
+   **Using HTTPS**
+   ```
+   git clone https://github.com/CarlosCSZ/Git_Visualizer_api.git
+   ```
+   **Using SSH KEY**<br />
+   -Create and add ssh key in your computer.<br />
+   -Attach your public ssh key into your GitHub account and write the following command.<br />
+   ```
+   git clone git@github.com:CarlosCSZ/Git_Visualizer_ui.git
+   ```
 
-# watch mode
-$ pnpm run start:dev
+<br />***2. Install dependencies***<br />
+  using <b>npm<b>
+  ```bash
+  $ pnpm install
+  ```
+  using <b>pnpm<b>
+  ```bash
+  $ pnpm install
+  ```
 
-# production mode
-$ pnpm run start:prod
-```
+<br />***3. Configure the environment variables***
+
+   **Create a .env file using the .env.example file.**
+   ```
+    nano .env
+   ```
+   #or
+   ```
+    vim .env
+   ```
+   The default local settings are:<br />
+    PORT=3001<br />
+    NODE_ENV="dev"<br />
+    GH_OWNER="CarlosCSZ"<br />
+    
+  --In case you want to try pulling information from your personal projects you may want to set the following variables:--<br />
+    GH_TOKEN= as your personal access token<br />
+    GH_OWNER= as your GitHub user<br />
+    
+
+<br />***4. Start the Backend app***
+
+   **From the root directory**
+   <br />--In case you use npm, replace "pnpm" for "npm".--
+   ```
+    # development
+    $ pnpm run start
+
+    # watch mode
+    $ pnpm run start:dev
+
+    # production mode
+    $ pnpm run start:prod
+  ```
+
+   The app will be running at the following url http://localhost:3001/
 
 ## Test
 
@@ -58,16 +89,7 @@ $ pnpm run test:e2e
 $ pnpm run test:cov
 ```
 
-## Support
+## 📂 API Documentation
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+*****
+Once you start the app, the documentation will be available on the following url(Local): http://localhost:3001/docs
