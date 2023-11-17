@@ -30,13 +30,13 @@ This REST API develped in [Nest.js](https://github.com/nestjs/nest). The main pu
    ```
 
 <br />***2. Install dependencies***<br />
-  using <b>npm<b>
-  ```bash
-  $ pnpm install
-  ```
   using <b>pnpm<b>
   ```bash
   $ pnpm install
+  ```
+  using <b>npm<b>
+  ```bash
+  $ npm install
   ```
 
 <br />***3. Configure the environment variables***
@@ -52,12 +52,7 @@ This REST API develped in [Nest.js](https://github.com/nestjs/nest). The main pu
    The default local settings are:<br />
     PORT=3001<br />
     NODE_ENV="dev"<br />
-    GH_OWNER="CarlosCSZ"<br />
-    
-  --In case you want to try pulling information from your personal projects you may want to set the following variables:--<br />
-    GH_TOKEN= as your personal access token<br />
-    GH_OWNER= as your GitHub user<br />
-    
+    GH_OWNER="CarlosCSZ"<br />    
 
 <br />***4. Start the Backend app***
 
