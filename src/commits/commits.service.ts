@@ -59,7 +59,6 @@ export class CommitsService {
       auth: privateRepo.token,
     });
     try {
-      this.logger.log(this.configService.gh.token);
       const ghResponse = await this.octokit.request(
         'GET /repos/{owner}/{repo}/commits',
         {
